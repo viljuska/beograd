@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="sr-RS">
+<head>
+    <title>Enquire</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="scripts/jquery-ui-themes-1.12.1/themes/dot-luv/jquery-ui.min.css">
+    <link rel="stylesheet" href="scripts/jquery-ui-themes-1.12.1/themes/dot-luv/theme.css">
+</head>
+<body id="enquire">
+<header id="header">
+    <div class="line">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="menu">
+                            <span class="bit-1"></span>
+                            <span class="bit-2"></span>
+                            <span class="bit-3"></span>
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Početna</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="services.html">Ponude</a>
+                            </li>
+                            <li class="nav-item logo">
+                                <a class="navbar-brand" href="index.html">
+                                    <img src="img/logo.svg" alt="" class="img-fluid">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">O nama</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="enquire.html">Kontakt<span class="sr-only">(current)</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="main">
+
+    <div class="container">
+        <div class="row enq-title">
+            <div class="col-12 text-center">
+                <h1>Kontakt</h1>
+            </div>
+            <div class="col-12 text-center">
+                <span class="bordered"></span>
+                <p>Unesite vaše podatke i označite za šta ste zainteresovani.</p>
+                <span class="bordered"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <form action="" method="post">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4 inputs">
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <input type="text" class="form-control" id="inputName" placeholder="Ime i prezime&ast;" required>
+                                </div>
+                                <div class="form-group col-12">
+                                    <input type="tel" class="form-control" id="inputTelephone" placeholder="Broj telefona&ast;" required>
+                                </div>
+                                <div class="form-group col-12">
+                                    <select id="inputState" class="form-control" required>
+                                        <option selected>Broj ljudi&ast;</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-12" id="date">
+                                    <input type="text" id="datepicker" class="form-control" placeholder="Datum dolaska*" required>
+                                </div>
+                                <div class="form-group col-12">
+                                    <select id="nights" class="form-control" required>
+                                        <option selected>Broj noćenja&ast;</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7+</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 check">
+                            <div class="filter">
+                                <label>Noćni klubovi
+                                    <input type="checkbox" class="all-type">
+                                    <span class="checkmark"></span>
+                                    <span class="border-orange"></span>
+                                </label>
+                                <label>Restorani
+                                    <input type="checkbox" class="other-type">
+                                    <span class="checkmark"></span>
+                                    <span class="border-orange"></span>
+                                </label>
+                                <label>Prevoz
+                                    <input type="checkbox" class="other-type">
+                                    <span class="checkmark"></span>
+                                    <span class="border-orange"></span>
+                                </label>
+                                <label>Izlet
+                                    <input type="checkbox" class="other-type">
+                                    <span class="checkmark"></span>
+                                    <span class="border-orange"></span>
+                                </label>
+                                <label>Smeštaj
+                                    <input type="checkbox" class="other-type">
+                                    <span class="checkmark"></span>
+                                    <span class="border-orange"></span>
+                                </label>
+                                <label>Jahting klub
+                                    <input type="checkbox" class="other-type">
+                                    <span class="checkmark"></span>
+                                    <span class="border-orange"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-5 text-input">
+                            <div class="input-group">
+                                <textarea class="form-control" placeholder="Da li imate neko pitanje?"></textarea>
+                            </div>
+                            <input type="submit" class="btn btn-primary" value="POŠALJI">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<footer id="footer">
+    <div class="container-fluid bigger">
+        <div class="row">
+            <div class="col-12 social-links">
+                <a href="#" class="social">
+                    <img src="img/instagram.svg" alt="" class="img-fluid">
+                </a>
+                <span class="book-link">
+                    <a href="enquire.html">Book <img src="img/book.svg" alt="" class="img-fluid book"> Now</a>
+                </span>
+                <a href="#" class="social">
+                    <img src="img/facebook.svg" alt="" class="img-fluid">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        crossorigin="anonymous"></script>
+
+
+<script src="scripts/animations.js"></script>
+
+<script>
+    $( function() {
+        $( "#datepicker" ).datepicker();
+    } );
+</script>
+
+
+</body>
+</html>
